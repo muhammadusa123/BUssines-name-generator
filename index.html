@@ -1,0 +1,61 @@
+<!-- create a bussiness name generator which contain
+Adjective:
+crazy  ,  amazing , fire
+Shop name:
+engine  , food , garments
+Other:
+bros   ,  limited ,  hub -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let rand = Math.random();
+      //because we are having 3 names combination divide 1 in to (0.33 ,  0.66 & 1)
+      let first, second, third;
+
+    if(rand < 0.33){
+        first = "Crazy"
+    }
+    else if (rand >= 0.33  && rand < 0.66){
+        first = "Amazing"
+    }
+    else{
+        first = "fire"
+    }
+
+    //lets generate second word
+    rand = Math.random()
+    if(rand < 0.33){
+        second = "Engine"
+    }
+    else if (rand >= 0.33  && rand < 0.66){
+        second = "Food"
+    }
+    else{
+        second = "Garments"
+    }
+    //lets generate third word
+    rand = Math.random()
+    if(rand < 0.33){
+        third = "Bros"
+    }
+    else if (rand >= 0.33  && rand < 0.66){
+        third = "Limited"
+    }
+    else{
+        third = "Hub"
+    }
+console.log(`${first} ${second} ${third}`)
+console.log(rand)
+
+
+
+    </script>
+</body>
+</html>
